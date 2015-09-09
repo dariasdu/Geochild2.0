@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondologin"
+    >
+
+
+    <ImageView android:layout_height="wrap_content"
+        android:src="@drawable/titulo"
+        android:id="@+id/img"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="15dip"
+        android:gravity="center"/>
+
+    <EditText android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="20dip"
+        android:singleLine="true"
+        android:id="@+id/etUsername"
+        android:hint="usuario"
+        android:typeface="monospace"
+        android:color="#94cf37"
+        />
+    <EditText android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:singleLine="true"
+        android:password="true"
+        android:id="@+id/etPassword"
+        android:hint="password"
+        />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dip"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:id="@+id/bLogin"
+        android:background="@drawable/btn_circular"
+        />
+
+
+    <TextView
+        android:id="@+id/tvRegisterLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Register Here"
+        android:textStyle="bold" />
+
+</LinearLayout>

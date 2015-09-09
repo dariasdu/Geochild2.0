@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.tonikamitv.loginregister.Menu"
+    android:background="@drawable/principal"
+
+    >
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp"
+        android:background="@drawable/btn_circular_azul"
+        android:paddingLeft="27dip"
+        android:onClick="pasarActividadregistrar"
+        android:paddingRight="21dip"
+        android:text=" Regístrate "
+        android:textColor="#FFFFFF"
+        android:textSize="25px" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/btn_circular"
+        android:onClick="pasarActividadlogin"
+        android:paddingLeft="20dip"
+        android:paddingRight="16dip"
+        android:text="Iniciar sesión"
+        android:textColor="#FFFFFF"
+        android:textSize="25px" />
+
+</RelativeLayout>
