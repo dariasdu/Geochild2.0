@@ -11,7 +11,7 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
@@ -21,12 +21,11 @@
         android:onClick="pasarActividadregistrar"
         android:paddingRight="21dip"
         android:text=" Regístrate "
-        android:textColor="#FFFFFF"
-        android:textSize="25px" />
+        android:textColor="#FFFFFF" />
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_above="@+id/button2"
         android:layout_centerHorizontal="true"
@@ -36,7 +35,6 @@
         android:paddingLeft="20dip"
         android:paddingRight="16dip"
         android:text="Iniciar sesión"
-        android:textColor="#FFFFFF"
-        android:textSize="25px" />
+        android:textColor="#FFFFFF" />
 
 </RelativeLayout>
