@@ -14,6 +14,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
     EditText etName, etAge, etUsername;
     Button bLogout;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

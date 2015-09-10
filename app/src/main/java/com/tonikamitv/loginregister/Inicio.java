@@ -1,11 +1,11 @@
 package com.tonikamitv.loginregister;
 
+import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.WindowManager;
 
-public class Inicio extends ActionBarActivity {
+public class Inicio extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // TODO Auto-generated method stub
@@ -16,7 +16,7 @@ public class Inicio extends ActionBarActivity {
         //quitar baraa de notificaciones
 
 
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_inicio);
 
 
         //Vamos a declarar un nuevo thread
