@@ -1,5 +1,5 @@
 <?php
-    $con=mysqli_connect("localhost","my_user","my_password","my_db");
+    $con=mysqli_connect(mysql.tuars.com","u426592385_maps","yani7864243","u426592385_maps");
       
     $username = $_POST["username"];
     $password = $_POST["password"];

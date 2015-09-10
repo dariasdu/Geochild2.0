@@ -25,7 +25,7 @@ import java.util.ArrayList;
 public class ServerRequests {
     ProgressDialog progressDialog;
     public static final int CONNECTION_TIMEOUT = 1000 * 15;
-    public static final String SERVER_ADDRESS = "http://tonikamitv.hostei.com/";
+    public static final String SERVER_ADDRESS = "http://lulu21.tuars.co/";
 
     public ServerRequests(Context context) {
         progressDialog = new ProgressDialog(context);
@@ -124,7 +124,7 @@ public class ServerRequests {
 
             HttpClient client = new DefaultHttpClient(httpRequestParams);
             HttpPost post = new HttpPost(SERVER_ADDRESS
-                    + "FetchUserData.php");
+                    + "prueba.php");
 
             User returnedUser = null;
 
