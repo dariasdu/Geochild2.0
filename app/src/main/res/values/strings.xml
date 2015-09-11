@@ -9,5 +9,6 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_inicio">Inicio</string>
     <string name="title_activity_menu">GeoChild 2.0</string>
+    <string name="title_activity_loguado">GeoChild 2.0</string>
 
 </resources>

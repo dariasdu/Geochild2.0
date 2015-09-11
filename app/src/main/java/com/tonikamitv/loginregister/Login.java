@@ -75,6 +75,6 @@ public class Login extends ActionBarActivity implements View.OnClickListener {
     private void logUserIn(User returnedUser) {
         userLocalStore.storeUserData(returnedUser);
         userLocalStore.setUserLoggedIn(true);
-        startActivity(new Intent(this, MainActivity.class));
+        startActivity(new Intent(this, Loguado.class));
     }
 }
