@@ -17,9 +17,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 public class Loguado extends FragmentActivity implements OnMapReadyCallback{
 
-    UserLocalStore userLocalStore;
-    EditText etName, etAge, etUsername;
-    Button bLogout;
+    
 
 
     @Override
@@ -31,14 +29,7 @@ public class Loguado extends FragmentActivity implements OnMapReadyCallback{
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
-        etUsername = (EditText) findViewById(R.id.etUsername);
-        etName = (EditText) findViewById(R.id.etName);
-        etAge = (EditText) findViewById(R.id.etAge);
-        bLogout = (Button) findViewById(R.id.bLogout);
 
-
-
-        userLocalStore = new UserLocalStore(this);
     }
 
     @Override
@@ -51,38 +42,5 @@ public class Loguado extends FragmentActivity implements OnMapReadyCallback{
     }
 
 
-    public void onClick(View v) {
-        switch(v.getId()){
-            case R.id.bLogout:
-                userLocalStore.clearUserData();
-                userLocalStore.setUserLoggedIn(false);
-                Intent loginIntent = new Intent(this, Login.class);
-                startActivity(loginIntent);
-                break;
-        }
-    }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-        if (authenticate() == true) {
-            displayUserDetails();
-        }
     }
-
-    private boolean authenticate() {
-        if (userLocalStore.getLoggedInUser() == null) {
-            Intent intent = new Intent(this, Login.class);
-            startActivity(intent);
-            return false;
-        }
-        return true;
-    }
-
-    private void displayUserDetails() {
-        User user = userLocalStore.getLoggedInUser();
-        etUsername.setText(user.username);
-        etName.setText(user.name);
-        etAge.setText(user.age + "");
-    }
-}
