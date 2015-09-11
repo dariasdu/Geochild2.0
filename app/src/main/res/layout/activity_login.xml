@@ -45,15 +45,16 @@
         />
 
 
-    <Button
-        android:id="@+id/tvRegisterLink"
-        android:layout_width="fill_parent"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Registrar"
-        android:background="@drawable/btn_circular"
-        android:layout_marginTop="25dip"
-        android:autoText="false"
-        android:textColor="#FFFFFF"
-        android:nestedScrollingEnabled="false" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="¿No puedes acceder a tu cuenta?"
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal"
+        android:textSize="16dp"
+        android:layout_weight="0.67" />
+
+
 
 </LinearLayout>

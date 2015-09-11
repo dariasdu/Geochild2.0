@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 public class Login extends ActionBarActivity implements View.OnClickListener {
     Button bLogin;
-    TextView registerLink;
+
     EditText etUsername, etPassword;
 
     UserLocalStore userLocalStore;
@@ -25,10 +25,10 @@ public class Login extends ActionBarActivity implements View.OnClickListener {
         bLogin = (Button) findViewById(R.id.bLogin);
         etUsername = (EditText) findViewById(R.id.etUsername);
         etPassword = (EditText) findViewById(R.id.etPassword);
-        registerLink = (TextView) findViewById(R.id.tvRegisterLink);
+
 
         bLogin.setOnClickListener(this);
-        registerLink.setOnClickListener(this);
+
 
         userLocalStore = new UserLocalStore(this);
     }
@@ -44,10 +44,7 @@ public class Login extends ActionBarActivity implements View.OnClickListener {
 
                 authenticate(user);
                 break;
-            case R.id.tvRegisterLink:
-                Intent registerIntent = new Intent(Login.this, Register.class);
-                startActivity(registerIntent);
-                break;
+
         }
     }
 
